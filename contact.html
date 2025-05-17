@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudAcademy - Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html"><span class="logo-first">Cłoud</span><span class="logo-last">Academy</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">☰</div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Have questions? We're here to help!</p>
+        </div>
+    </header>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+        <div class="container">
+            <h2 class="getintouch">Get in touch</h2>
+            <form id="contactForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    <span class="error-message" id="subjectError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="successMessage" class="success-message"></div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <div class="container">
+            <h2>Other Ways to Reach Us</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Email</h3>
+                    <p>info@CloudAcademy.com</p>
+                    <p>learn@CloudAcademy.com</p>
+                </div>
+                <div class="info-card">
+                    <h3>Phone</h3>
+                    <p>+977 9863638585</p>
+                    <p>+977 0977766655</p>
+                </div>
+                <div class="info-card">
+                    <h3>Address</h3>
+                    <p>Tinkune<br>Kathmandu, KTM 31</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 CloudAcademy. All rights reserved <sup>®</sup> | Contact: info@CloudAcademy.com</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
